@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">
+                    Survey Form
+                </h1>
+                <p id="description" class="description text-center">
+                    Thank you for taking the time to help us improve the platform
+                </p>
+            </header>
+            <form id="survey-form">
+               <div class="form-group">
+                   <label id="name-label" for="name">Name</label>
+                   <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                    />
+                 </div>
+            <div class="form-group">
+                <label id="email-label" for="email">email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age<span class="clue">(optional)</span>
+                    <input
+                    type="number"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="100"
+                    class="form-control"
+                    placeholder="Enter your age" />
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control"required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="PreferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Languages Around the World to a friend?</p>
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked/>definitely
+                </label>
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"/>Maybe
+                </label>
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio" />
+                    Not sure
+                </label>
+            <div class="form-group">
+                <p>What is your favorite feature of Languages Around the World?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="VarietyOfCourses">The variety of Courses</option>
+                    <option value="Community">Community</option>
+                    <option value="StudyMaterial">Study Material</option>
+                    <option value="Teachers">Teachers</option>
+                </select>
+            </div>
+        
+
+        <div class="form-group">
+            <p>
+                What Language are you learning now?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+                <input
+                name="Prefer"
+                value="English"
+                type="checkbox"
+                class="input-checkbox"/>
+                English
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="german"
+                type="checkbox"
+                class="input-checkbox"/>
+                German
+            </label>
+            <label>
+                <input 
+                name="prefer"
+                value="Espanish"
+                type="checkbox"
+                class="input-checkbox"/>
+                Espanish
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="Chinese"
+                type="checkbox"
+                class="input-checkbox"/>
+                Chinese
+
+            </label>
+            <label>
+                <input
+                name="prefer"
+                value="French"
+                type="checkbox"
+                class="input-checkbox"/>
+                French
+            </label>
+            <label>
+                <input
+                name="prefer" value="italian" type="checkbox" class="input-checkbox"/>
+                Italian
+            </label>
+            <div class="form-group">
+                <P>What would you like us to improve?</P>
+               <label><input name="advice" value="the-content" type="radio" class="input-radio"/>
+                The content</label>
+                <label>
+                    <input name="advice" value="the-platform" type="radio" class="input-radio"/>
+                    The Platform
+                </label>
+                <label>
+                    <input name="advice" value="the-course-offer" type="radio" class="input-radio"/>
+                    The course offer
+                </label>
+                <label>
+                    <input name="advice" value="nothing-ILikeEverything" type="radio" class="input-radio"/>
+                    Nothing I like everything! 
+                </label>
+            </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea 
+            id="comments"
+            class="input-textarea"
+            name="comments"
+            placeholder="Enter your comment here..."></textarea>
+
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
