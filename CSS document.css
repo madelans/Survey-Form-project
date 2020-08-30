@@ -1,9 +1,5 @@
-@import
-
 :root {
     --color-white:: #f3f3f3;
-    --color-darkblue: #1b1b32;
-    --color-darkblue-alpha: rgba(27, 27, 50, 0, 8);
     --color-green: #37af65;
 }
 *,
@@ -12,12 +8,13 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: verdana;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--color-white);
+    color: #F2E3D5;
     margin: 0;
+    
 }
 body::before {
     content: '';
@@ -28,7 +25,9 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background-image: url(https://cdn.pixabay.com/photo/2020/08/21/22/25/kimono-5507132_960_720.jpg);
+   background: var(--color-darkblue);
+    background-image: 
+   url(https://cdn.pixabay.com/photo/2020/08/21/22/25/kimono-5507132_960_720.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -104,12 +103,15 @@ button{
 
 .text-center{
     text-align: center;
+    color: #BF7E04;
+  background-color: #F2E3D5;
 }
 
 form {
-    background: var(--color-darkblue-alpha);
-    padding: 2.5rem 0.625rem;
-    border-radius: 0.25rem;
+  background: #730237;
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+  opacity: 90%;
 }
 @media(min-width: 480px) {
     form {
@@ -160,7 +162,6 @@ form {
     border-radius: 2px;
     cursor: pointer;
 }
-
 
 
 
